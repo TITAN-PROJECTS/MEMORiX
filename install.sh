@@ -11,7 +11,7 @@ ui_print " ▌MODULE VERSION: X2.0 ▌"
 ui_print " ▌MODULE AUTHOR: @Kartik728 ▌"
 sleep 1
 ui_print " "
-ui_print " ▌REMOVE ANY OTHER MEMORY MANAGEMENT & SWAPPER MODULES TO PREVENT CONFLICTS ▌"
+ui_print " ▌REMOVE ANY OTHER ZRAM SWAPPER MAGISK MODULES TO PREVENT CONFLICTS ▌"
 ui_print " "
 
 ZRAM=$TMPDIR/post-fs-data.sh
@@ -28,15 +28,12 @@ on_install() {
 sleep 1
 ui_print " "
 ui_print " ▌VOLUME UP = SWITCH , VOLUME DOWN = SELECT ▌"
-sleep 2
 ui_print " "
 ui_print " ▌SELECT ACCORDING TO YOUR DEVICE RAM ▌"
-sleep 1
 ui_print " "
 sleep 1
 ui_print " "
 ui_print " ▌🆉🆁🅰🅼 🅼🅾🅳🅴🆂 ▌"
-sleep 1
 ui_print " "
 ui_print " [1] ▌DISABLE ZRAM ▌"
 ui_print " [2] ▌1 GB ZRAM ▌"
@@ -54,7 +51,7 @@ ui_print " [13] ▌12 GB ZRAM ▌"
 ui_print " [14] ▌13 GB ZRAM ▌"
 ui_print " [15] ▌14 GB ZRAM ▌"
 ui_print " [16] ▌15 GB ZRAM ▌"
-sleep 2
+sleep 1
 ui_print " "
 ui_print " ▌SELECT WHAT YOU DESIRE ▌"
 ME=1
@@ -120,4 +117,5 @@ case $ME in
      " >> $ZRAM; echo "zram" >> $ZRAM;;
  esac
 ui_print "$MEMORiX"
+ui_print "Team TITΛN × Noobies // Link"
 }
